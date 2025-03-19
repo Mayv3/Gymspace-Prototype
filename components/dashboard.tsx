@@ -47,18 +47,6 @@ export default function Dashboard() {
   const [showEmailForm, setShowEmailForm] = useState(false)
   const [emailRecipient, setEmailRecipient] = useState(null)
   const [currentTab, setCurrentTab] = useState("overview")
-  const [greeting, setGreeting] = useState("")
-
-  useEffect(() => {
-    const hours = new Date().getHours()
-    if (hours < 12) {
-      setGreeting("Buenos días")
-    } else if (hours < 18) {
-      setGreeting("Buenas tardes")
-    } else {
-      setGreeting("Buenas noches")
-    }
-  }, [])
 
   const handleAddUser = () => {
     setEditingUser(null)
@@ -270,7 +258,7 @@ export default function Dashboard() {
           <div className="flex flex-col justify-between gap-2 sm:flex-row sm:items-center">
             <div>
               <h2 className="text-2xl font-bold tracking-tight text-gray-800 dark:text-white sm:text-3xl">
-                {greeting}, Admin
+                Hola! Admin
               </h2>
               <p className="text-muted-foreground">Aquí tienes un resumen de tu gimnasio</p>
             </div>
