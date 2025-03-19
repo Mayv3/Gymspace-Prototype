@@ -52,7 +52,7 @@ export default function Dashboard() {
   useEffect(() => {
     const hours = new Date().getHours()
     if (hours < 12) {
-      setGreeting("Buenos días TODOS PUTOS")
+      setGreeting("Buenos días")
     } else if (hours < 18) {
       setGreeting("Buenas tardes")
     } else {
