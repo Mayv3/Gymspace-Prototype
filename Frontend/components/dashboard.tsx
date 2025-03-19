@@ -97,7 +97,6 @@ export default function Dashboard() {
               <Dumbbell className="h-8 w-8 text-orange-500" />
               <span className="text-xl font-bold text-orange-500 sm:text-2xl">GymSpace</span>
             </div>
-
             {/* Mobile menu */}
             <Sheet>
               <SheetTrigger asChild>
@@ -165,7 +164,6 @@ export default function Dashboard() {
                 </div>
               </SheetContent>
             </Sheet>
-
             <div className="ml-auto flex items-center gap-4">
               <ThemeToggle />
               <Button variant="ghost" size="icon" className="relative">
@@ -225,7 +223,7 @@ export default function Dashboard() {
               onClick={() => setCurrentTab("overview")}
             >
               <LayoutDashboard className="mr-2 h-4 w-4" />
-              Dashboard
+              Panel de Administración
             </a>
             <a
               href="#"
